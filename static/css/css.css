@@ -1,4 +1,29 @@
-body {
-  height: 100%;
-  width: 100%;
+html {
+  overflow-x: hidden
+}
+
+h1,h2,h3 {
+  font-size: 14px
+}
+
+::-webkit-input-placeholder {
+  color: #999
+}
+
+.header{
+  background-color: #444;
+}
+.header .logo{width: 80px;}
+.header-menu{
+  position: absolute;
+  right: 16px;
+  top: 0;
+  background-color: #444;
+}
+.header-time{
+  position: absolute;
+  top:0;
+  right: 20px;
+  line-height: 60px;
+  color:#fff;
 }
