@@ -45,6 +45,9 @@ h1,h2,h3 {
   font-weight: 500;
   
 }
+.menu a{
+  margin-bottom: 20px;
+}
 .daily{
   padding-top: 50px;
   font-size: 20px;
