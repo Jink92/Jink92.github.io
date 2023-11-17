@@ -24,8 +24,73 @@
       <div class="header-time"></div>
     </div>
   </div>
-
+  <div class="content">
+    <div class="title">
+      <h1>Jink</h1>
+      <h2>
+        Hello World !!!
+        <br>存活于互联网的边缘
+      </h2>
+    </div>
+    <div class="menu">
+      <a href="./tvbox/config.json" target="_blank" class="layui-btn layui-btn-lg layui-bg-primary">Tvbox接口</a>
+      <a href="./tvbox/yingshitv.apk"  class="layui-btn layui-btn-lg layui-btn-primary layui-border-green" target="_blank">影视电视版下载</a>
+      <a href="./tvbox/yingshimobile.apk" class="layui-btn layui-btn-lg layui-btn-primary layui-border-green" target="_blank">影视手机版下载</a>
+    </div>
+    <div class="daily">
+      <p id="poem">
+      叙别梦、扬州一觉。
+      </p>
+      <p id="info">
+      【宋代】吴文英《夜游宫·人去西楼雁杳》
+      </p>
+    </div>
+    
+  </div>
+  <div class="footer layui-footer">
+    <p>
+      Copyright © 2023 <a href="/">Jink</a> All rights reserved</p>
+    <p>
+      <span>
+        联系：
+        <a href="https://github.com/jink92" target="_blank" sponsor="iconfont" style="color: #9B16FF; margin-right: 10px;">
+          <strong>Github</strong>
+        </a>
+        <a href="mailto:qin_jinkai@163.com" target="_blank" sponsor="upyun" style="color: #23A7E8;margin-right: 10px;">
+          <strong>邮箱</strong>
+        </a>
+        <a href="https://res.abeim.cn/api/qq/?qq=632186662" target="_blank" sponsor="Gitee" style="color:#C71D23;">
+          <strong>QQ</strong>
+        </a>
+      </span>
+    </p>
+  </div>
   <script src="./static/layui/layui.js"></script>
+  <script
+  type="text/javascript"
+  color="22,186,170"
+  pointColor="22,186,170"
+  opacity="1"
+  zIndex="2"
+  count="300"
+  src="./static/js/canvas-nest.js"
+></script>
+<!--End-->
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(function (res){
+      return res.json();
+    })
+    .then(function (data) {
+      var hitokoto = document.getElementById('hitokoto');
+      poem.innerText = data.hitokoto; 
+      var from= document.getElementById('from');
+      info.innerText = "From："+data.from; 
+    })
+    .catch(function (err) {
+      console.error(err);
+    })
+</script>
   <script>
     setInterval(nowtime,1000)
   </script>

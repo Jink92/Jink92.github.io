@@ -11,19 +11,51 @@ h1,h2,h3 {
 }
 
 .header{
-  background-color: #444;
+  background-color: #fff;
+  border-bottom: #44444430 1px solid;
 }
 .header .logo{width: 80px;}
-.header-menu{
-  position: absolute;
-  right: 16px;
-  top: 0;
-  background-color: #444;
-}
+
 .header-time{
   position: absolute;
   top:0;
   right: 20px;
   line-height: 60px;
-  color:#fff;
+  color:#444;
+}
+.content{
+  padding-top: 60px;
+  min-height: calc(100vh - 210px);
+  text-align: center;
+}
+.content .title{
+  background-color: #ffffff40;
+  margin: 0 auto;
+  color: #16baaa;
+}
+.content h1 {
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 68px;
+}
+.content h2 {
+  padding: 16px 0 50px;
+  line-height: 52px;
+  font-size: 32px;
+  font-weight: 500;
+  
+}
+.daily{
+  padding-top: 50px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.footer{
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  border-top: #16baaa 1px dashed;
+  padding: 15px 0;
+  text-align: center;
+  line-height: 30px;
 }
