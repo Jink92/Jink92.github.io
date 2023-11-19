@@ -47,5 +47,4 @@ CCTV4K,http://cntv.lat/tv/live.php?auth=231110&id=CCTV4K
 
 体育频道,#genre#
 纬来体育,http://cloud.yumixiu768.com/tmp/123.m3u8
-ELEVEN体育-1,http://103.45.68.47/gy/gy224/xsj.php?id=eleven-sport1
-ELEVEN体育-2,http://103.45.68.47/gy/gy224/xsj.php?id=eleven-sport2
+NBA,https://hls.phlw.net/live/56376581/playlist.m3u8?k=53d38c6be789db9af917303791643882&t=1700356270
